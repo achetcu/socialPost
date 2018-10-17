@@ -1,0 +1,13 @@
+
+    <h1>My Thoughts</h1>
+    <button class = "add" ng-click="$ctrl.addText()">New Thought</button>
+<div ng-if = "$ctrl.hide === true">
+    <ul>
+        <post ng-repeat="items in $ctrl.list" item ="items" >
+        </post>
+       
+    </ul>
+</div>
+<postform ng-if = "$ctrl.show === true" on-submit = "$ctrl.addPost">
+
+</postform>
